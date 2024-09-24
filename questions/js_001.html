@@ -1,0 +1,17 @@
+<!-- Question Content -->
+<h5>What is closure in JavaScript?</h5>
+<p>A closure is a function that remembers its outer variables and can access them even after the outer function has executed.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>Closures allow for private variables, preserving function states across invocations. This enables data encapsulation and makes functions more powerful in JavaScript.</p>
+
+<h6>Code Example:</h6>
+<pre><code>function outer() {
+  let a = 1;
+  return function inner() {
+    console.log(a);
+  };
+}
+const innerFunc = outer();
+innerFunc(); // Output: 1</code></pre>

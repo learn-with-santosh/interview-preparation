@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Interview Prep</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-fluid vh-100 d-flex flex-column">
+    <!-- Header Section -->
+    <header class="py-3 bg-primary text-white text-center">
+        <h1>Tech Interview Preparation</h1>
+        <p>Random Questions to Sharpen Your Skills</p>
+    </header>
+
+    <!-- Main content: Question and Answer Sections -->
+    <div class="row flex-grow-1">
+        <!-- Question Section -->
+        <div class="col-md-12 bg-light p-5 d-flex flex-column ">
+            <div id="question-container">
+                <div class="alert alert-info text-center">Loading question...</div>
+            </div>
+        </div>
+
+      
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <button id="load-question-btn" class="btn btn-lg btn-outline-light">Load Another Question</button>
+        <button id="show-answer-btn" class="btn btn-lg btn-outline-light ml-3" style="display:none;">Show Answer</button>
+    </footer>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .btn {
+    margin: 0.5rem;
+}
+
+/* Question and Answer Sections */
+.question-section, .answer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.question-content, .answer-content {
+    max-width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+    .question-section, .answer-section {
+        padding: 1rem;
+    }
+    .question-content, .answer-content {
+        max-width: 100%;
+    }
+}
+
+/* Code Styling */
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    overflow-x: auto;
+}
