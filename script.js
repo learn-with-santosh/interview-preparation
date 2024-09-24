@@ -1,7 +1,15 @@
 // List of all question file names
 const questions = [
-    'questions/cs_001.html',
     'questions/js_001.html',
+    'questions/angular_001.html',
+    'questions/angular_002.html',
+    'questions/angular_003.html',
+    'questions/angular_004.html',
+    'questions/angular_005.html',
+    'questions/angular_006.html',
+    'questions/angular_007.html',
+    'questions/angular_008.html',
+
     // Add all your question files here...
 ];
 

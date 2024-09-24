@@ -1,0 +1,28 @@
+<!-- Question Content -->
+<h5>What are lifecycle hooks in Angular?</h5>
+<p>Lifecycle hooks are methods that Angular calls at different stages of a component's existence. These hooks allow developers to tap into key events in a component's life cycle, such as creation, changes, and destruction.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>The main lifecycle hooks in Angular are:</p>
+<ul>
+  <li><strong>ngOnInit:</strong> Called once, after the component's data-bound properties are initialized.</li>
+  <li><strong>ngOnChanges:</strong> Invoked when an input property changes.</li>
+  <li><strong>ngOnDestroy:</strong> Called right before the component is destroyed.</li>
+  <li><strong>ngAfterViewInit:</strong> Called after the component's view and child views are initialized.</li>
+</ul>
+
+<h6>Code Example:</h6>
+<pre><code>
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-lifecycle',
+  template: '<p>Lifecycle demo</p>',
+})
+export class LifecycleComponent implements OnInit {
+  ngOnInit() {
+    console.log('Component initialized');
+  }
+}
+</code></pre>

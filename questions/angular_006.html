@@ -1,0 +1,17 @@
+<!-- Question Content -->
+<h5>What are directives in Angular?</h5>
+<p>Directives are special markers on a DOM element that tell Angular to do something with that element or its children. Angular has three types of directives: component directives, structural directives, and attribute directives.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>
+  - **Component Directives**: These are basically the components themselves.<br>
+  - **Structural Directives**: These modify the DOM layout by adding or removing elements (e.g., `*ngIf`, `*ngFor`).<br>
+  - **Attribute Directives**: These modify the appearance or behavior of an element (e.g., `[ngClass]`, `[ngStyle]`).
+</p>
+
+<h6>Code Example:</h6>
+<pre><code>
+// ngIf structural directive example
+<p *ngIf="isLoggedIn">Welcome back, user!</p>
+</code></pre>

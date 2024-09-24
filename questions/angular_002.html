@@ -1,0 +1,21 @@
+<!-- Question Content -->
+<h5>What is a component in Angular?</h5>
+<p>A component in Angular is the fundamental building block of the user interface. Each component consists of three parts: the HTML template, the TypeScript class, and the CSS styles.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>A component in Angular is created using the `@Component` decorator, which defines the component's selector, template, and style files. Components are reusable, and they can be nested inside other components to create complex UIs.</p>
+
+<h6>Code Example:</h6>
+<pre><code>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'my-angular-app';
+}
+</code></pre>

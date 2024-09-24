@@ -1,0 +1,20 @@
+<!-- Question Content -->
+<h5>What is data binding in Angular?</h5>
+<p>Data binding is a mechanism in Angular that allows you to bind the UI and business logic of the application. It is a way to coordinate the communication between the component and the DOM.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>There are four types of data binding in Angular:</p>
+<ul>
+  <li><strong>Interpolation:</strong> Allows binding of component properties to the DOM.</li>
+  <li><strong>Property Binding:</strong> Binds the value of HTML elements to component properties.</li>
+  <li><strong>Event Binding:</strong> Allows components to listen and respond to DOM events.</li>
+  <li><strong>Two-way Data Binding:</strong> Enables synchronization of data between the model and the view.</li>
+</ul>
+
+<h6>Code Example:</h6>
+<pre><code>
+// Two-way data binding example
+<input [(ngModel)]="name" />
+<p>Your name is: {{ name }}</p>
+</code></pre>

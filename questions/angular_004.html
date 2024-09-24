@@ -1,0 +1,21 @@
+<!-- Question Content -->
+<h5>What are services in Angular, and how are they used?</h5>
+<p>Services in Angular are used to encapsulate business logic and data access, making code modular and reusable. They can be injected into components and other services using Angular's Dependency Injection system.</p>
+
+<!-- Answer Content -->
+<h6>Explanation:</h6>
+<p>Services are typically used to handle data exchange between components, communicate with external APIs, or perform complex logic. They are declared using the `@Injectable()` decorator and provided either at the root level or in specific modules or components.</p>
+
+<h6>Code Example:</h6>
+<pre><code>
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class DataService {
+  getData() {
+    return 'Data from service';
+  }
+}
+</code></pre>
